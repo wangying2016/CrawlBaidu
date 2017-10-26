@@ -43,7 +43,7 @@ while True:
             print('This reuslt missing something! No worries though!')
             continue
 
-    # 3. Move to new page
+    # 3. Move to new page.
     if len(info) >= int(limit):
         break
     nextPage = bsObj.find('a', text='下一页>')
