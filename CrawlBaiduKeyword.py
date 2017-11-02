@@ -27,7 +27,7 @@ while True:
         break
 
     # 2. Record data in one page.
-    bsObj = BeautifulSoup(html)
+    bsObj = BeautifulSoup(html, 'html.parser')
     for result in bsObj.find('div', {'id': 'content_left'})\
                        .findAll('div', class_=re.compile('^result(.)*c-container(.)*')):
         try:
